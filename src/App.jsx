@@ -1,6 +1,7 @@
 import React from "react";
 import LandingPage from "./components/LandingPage";
 import Fruits from "./components/Fruits";
+import Apples from "./components/Apples";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importing necessary components from react-router-dom
 
 // Main App component
@@ -17,6 +18,7 @@ const App = () => {
           {/* Routes component for defining different routes */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/fruits" element={<Fruits />} />
+          <Route path="/apples" element={<Apples />} />
         </Routes>
       </div>
     </Router>
