@@ -2,6 +2,7 @@ import React from "react";
 import TextField from "@mui/material/TextField";
 // import { FaRegCircleUser, FaKey } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 import farmkit from "../Images/cover-image.jpg";
 
 export default function Signup() {
@@ -86,9 +87,11 @@ export default function Signup() {
         </div>
         <div className="btns flex flex-col items-center ">
           <div className="mt-12">
-            <button className="py-2.5 px-6 border border-green-900 text-green-900 rounded-md hover:bg-green-700 hover:text-white">
-              Create account{" "}
-            </button>
+            <Link to="/login">
+              <button className="py-2.5 px-6 border border-green-900 text-green-900 rounded-md hover:bg-green-700 hover:text-white">
+                Create account{" "}
+              </button>
+            </Link>
           </div>
           <div className="font-extrabold text-xl mt-3">
             <p>Or</p>

@@ -41,7 +41,9 @@ function LandingPage() {
           <FaFacebookMessenger className="text-3xl cursor-pointer" />
         </div>
         <div className="bg-[#6ba809] text-black font-semibold py-3 px-5 rounded-full cursor-pointer hover:bg-[#20730a]">
-          <button>SIGN-IN</button>
+          <Link to="/login">
+            <button>SIGN-IN</button>
+          </Link>
         </div>
       </header>
       <main className="farmkit-main">

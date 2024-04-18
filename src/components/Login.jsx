@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import { FaRegCircleUser, FaKey } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import farmkit from "../Images/cover-image.jpg";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -68,9 +69,11 @@ export default function Login() {
 
           <div className="mt-12">
             <p className="pb-1">Don't have an account?</p>
-            <button className="py-2.5 px-6 border border-green-900 text-green-900 rounded-md hover:bg-green-700 hover:text-white">
-              Create account{" "}
-            </button>
+            <Link to="/signup">
+              <button className="py-2.5 px-6 border border-green-900 text-green-900 rounded-md hover:bg-green-700 hover:text-white">
+                Create account{" "}
+              </button>
+            </Link>
           </div>
         </div>
       </div>
