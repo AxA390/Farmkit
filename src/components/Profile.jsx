@@ -1,13 +1,13 @@
 import React from "react";
-import apple from "../Images/apple.jpeg";
 import { FaUser } from "react-icons/fa";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
+import apple from "../Images/fresh-apple.jpg";
 
-function Profile() {
+export default function Profile() {
   return (
-    <div className="bg-[#a2fc0f]">
-      <div className="sidebar w-1/5 h-full fixed top-0 left-0 pt-5 text-white border-solid">
+    <div className="flex ">
+      <div className="sidebar w-[20%] h-full fixed top-0 left-0 pt-5 text-white border-solid bg-[#97e910] ">
         <div className="profile h-1/5 flex flex-col justify-center items-center">
           <div className="avatar h-44 w-28 bg-white rounded-full flex justify-center items-center ">
             <FaUser className="text-black h-20 w-16" />
@@ -44,91 +44,127 @@ function Profile() {
           </li>
         </ul>
       </div>
-      <div className="ml-52 p-5">
-        <div className="apple-container flex flex-wrap justify-center">
-          <table>
-            <tr>
-              <td>
-                <img src={apple} alt="" className="midImage" />
-                <p className="desc">
-                  Mustang Apple
-                  <br />
-                  Price: Rs 400 <button>Buy</button>
-                </p>
-              </td>
-              <td>
-                <img src={apple} alt="" className="midImage" />
-                <p className="desc">
-                  Mustang Apple
-                  <br />
-                  Price: Rs 400 <button>Buy</button>
-                </p>
-              </td>
-              <td>
-                <img src={apple} alt="" className="midImage" />
-                <p className="desc">
-                  Mustang Apple
-                  <br />
-                  Price: Rs 400 <button>Buy</button>
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src={apple} alt="" className="midImage" />
-                <p className="desc">
-                  Mustang Apple
-                  <br />
-                  Price: Rs 400 <button>Buy</button>
-                </p>
-              </td>
-              <td>
-                <img src={apple} alt="" className="midImage" />
-                <p className="desc">
-                  Mustang Apple
-                  <br />
-                  Price: Rs 400 <button>Buy</button>
-                </p>
-              </td>
-              <td>
-                <img src={apple} alt="" className="midImage" />
-                <p className="desc">
-                  Mustang Apple
-                  <br />
-                  Price: Rs 400 <button>Buy</button>
-                </p>
-              </td>
-            </tr>
-          </table>
-          <h1 className="text-center">Other products you might like</h1>
-          <div className="bott">
-            <table>
-              <tr className="w-40 h-40 mr-12 rounded-2xl">
-                <td>
-                  <img src={apple} alt="" className="bottImage" />
+
+      <div className="product bg-[#a2fc0f]">
+        <div className="ml-52 p-5">
+          <div className="apple-container flex flex-wrap justify-center">
+            <table className="flex flex-col ml-[200px]">
+              <tr>
+                <td className="text-center">
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px]">Buy</button>
+                    </p>
+                  </div>
                 </td>
                 <td>
-                  <img src={apple} alt="" className="bottImage" />
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px] ">Buy</button>
+                    </p>
+                  </div>
                 </td>
                 <td>
-                  <img src={apple} alt="" className="bottImage" />
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px] ">Buy</button>
+                    </p>
+                  </div>
                 </td>
-                <td>
-                  <img src={apple} alt="" className="bottImage" />
+                <td className="text-center">
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px] ">Buy</button>
+                    </p>
+                  </div>
                 </td>
-                <td>
-                  <img src={apple} alt="" className="bottImage" />
+              </tr>
+              <tr className="mt-[20px]">
+                <td className="text-center">
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px] ">Buy</button>
+                    </p>
+                  </div>
                 </td>
-                <td>
-                  <img src={apple} alt="" className="bottImage" />
+                <td className="text-center">
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px] ">Buy</button>
+                    </p>
+                  </div>
+                </td>
+                <td className="text-center">
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px] ">Buy</button>
+                    </p>
+                  </div>
+                </td>
+                <td className="text-center">
+                  <div className="image-container">
+                    <img src={apple} alt="" className="midImage" />
+                    <p className="desc">
+                      Mustang Apple
+                      <br />
+                      Price: Rs 400 <button className="pl-[60px] ">Buy</button>
+                    </p>
+                  </div>
                 </td>
               </tr>
             </table>
+
+            <div className="bott mt-[15px] ml-[95px]">
+              <h1 className="text-center text-[25px] font-extrabold mb-3">
+                Other products you might like
+              </h1>
+              <table>
+                <tr className=" h-40 mr-12 rounded-2xl">
+                  <td className="pl-[10px]">
+                    <img src={apple} alt="" className="bottImage" />
+                  </td>
+                  <td className="pl-[10px]">
+                    <img src={apple} alt="" className="bottImage" />
+                  </td>
+                  <td className="pl-[10px]">
+                    <img src={apple} alt="" className="bottImage" />
+                  </td>
+                  <td className="pl-[10px]">
+                    <img src={apple} alt="" className="bottImage" />
+                  </td>
+                  <td className="pl-[10px]">
+                    <img src={apple} alt="" className="bottImage" />
+                  </td>
+                  <td className="pl-[10px]">
+                    <img src={apple} alt="" className="bottImage" />
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-export default Profile;
